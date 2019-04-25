@@ -1,0 +1,1 @@
+{"version":3,"file":"\/home\/gabriele\/Templates\/CLOJURE\/hello-world.core\/resources\/public\/cljs-out\/test\/hello_world\/scales.js","sources":["scales.cljs"],"lineCount":10,"mappings":";AAAA;;;AAIA,4BAAA,5BAAMA,gEAAQC;AAAd,AACE,IAAMC,YACAC,AACA,AACA,wBAAA,CAAA,IAAA,7BACA,4CAAA,CAAA,IAAA;AAJN,AAME,OAACD,oBAAUD","names":["hello-world.scales\/xScale","x","getXCoord","js\/d3"]}
