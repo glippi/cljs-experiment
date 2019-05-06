@@ -15,3 +15,7 @@ pom.xml.asc
 .nrepl-port
 .cpcache/
 .rebel_readline_history
+.idea/
+.cljs_nashorn_repl/
+nashorn_code_cache/
+*.iml
