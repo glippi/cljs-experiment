@@ -16,7 +16,7 @@ cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new clj
 }
 
 return result__13425__auto__;
-}catch (e17098){var t__13469__auto__ = e17098;
+}catch (e24028){var t__13469__auto__ = e24028;
 return cljs.test.do_report.call(null,new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),new cljs.core.Keyword(null,"error","error",-978969032),new cljs.core.Keyword(null,"expected","expected",1583670997),cljs.core.list(new cljs.core.Symbol(null,"=","=",-1501502141,null),cljs.core.list(new cljs.core.Symbol(null,"xScale","xScale",460655711,null),(100)),(50)),new cljs.core.Keyword(null,"actual","actual",107306363),t__13469__auto__,new cljs.core.Keyword(null,"message","message",-406056002),null], null));
 }});
 

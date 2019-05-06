@@ -15,7 +15,6 @@
   (go
     (let [remote-data (<! (<GET dataVizEndpoint))
           transformed-data (->> remote-data
-                                (take 10)
                                 (map (fn [[year value]]
                                        {:year year :value value})))]
         (-> @model
