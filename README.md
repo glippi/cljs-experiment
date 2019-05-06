@@ -11,10 +11,15 @@ potentiality and see how it fits for creating datavisualization for the web
 ## development
 
 To get an interactive development environment run:
+
 ```lein fig:build```
+
 To clean all compiled files:
+
 ```lein clean```
+
 To create a production build run:
+
 ```lein clean```
 ```lein fig:min```
 
