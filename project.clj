@@ -10,7 +10,9 @@
                  [org.clojure/clojurescript "1.10.339"]
                  [org.clojure/core.async  "0.3.443"]
                  [cljsjs/d3 "4.12.0-0"]
-                 [reagent "0.8.1"]]
+                 [reagent "0.8.1"]
+                 [cljs-ajax "0.8.0"]
+                 ]
 
   :source-paths ["src"]
 
