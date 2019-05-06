@@ -1,12 +1,16 @@
 pom.xml
+pom.xml.asc
 *jar
+*.class
 /lib/
 /classes/
 /out/
+/checkouts/
 /target/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
+.lein-failures
 .repl
 .nrepl-port
 .cpcache/
