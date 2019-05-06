@@ -1,37 +1,33 @@
-# hello-world.core
+# clojurescript dataviz experiment
+>first attempt to develop a simple dataviz with cljs and d3
 
-FIXME: Write a one-line description of your library/project.
 
-## Overview
+## overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+This is a simple project made for experimenting and discovering clojurescript
+potentiality and see how it fits for creating datavisualization for the web
 
-## Development
+
+## development
 
 To get an interactive development environment run:
 
-    lein fig:build
-
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
-
-    (js/alert "Am I connected?")
-
-and you should see an alert in the browser window.
+    ```lein fig:build```
 
 To clean all compiled files:
 
-	lein clean
+    ```lein clean```
 
 To create a production build run:
 
-	lein clean
-	lein fig:min
+    ```lein clean```
+    ```lein fig:min```
 
 
-## License
+### todo:
 
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+- [x] use d3 scale
+- [x] use react bindings with reagent
+- [x] fetch data
+- [ ] resize chart on window resize event
+- [ ] add tooltip
