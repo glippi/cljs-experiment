@@ -7,7 +7,7 @@
 
 (defn swapm! [x y]
   (swap! y (fn [xx] x))
-  )
+)
 
 (def dataVizEndpoint "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json")
 
@@ -30,6 +30,5 @@
   (-> @model
       (update :bars conj {:year year :value value})
       (swapm! model)
-      )
   )
-
+)
