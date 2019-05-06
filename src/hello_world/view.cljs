@@ -1,7 +1,7 @@
 (ns hello-world.view
-  (:require 
-   [hello-world.scales :refer [xScale]] 
-   [hello-world.model :as m :refer [model]] 
+  (:require
+   [hello-world.scales :refer [xScale]]
+   [hello-world.model :as m :refer [model]]
    [clojure.string :as str]
     [hello-world.controller :as controller]
 ))
@@ -20,9 +20,16 @@
 
 (defn screen-component [state]
   [:div
-    [:div>h1 (:text state)]
+  [:header.bg-gold.sans-serif>div.mw9.center.pa4.pt5-ns.ph7-l
+   [:h3.f2.f1-m.f-headline-l.measure-narrow.lh-title.mv0
+    [:span.bg-black-90.lh-copy.white.ph2.pv1.tracked-tight "ClojureScripts + D3 = "]
+    [:span.bg-black-90.lh-copy.white.ph2.pv1.tracked-tight.red
+     {:dangerouslySetInnerHTML {:__html "&#10084;"}}]
+    ]
+   [:h4.f3.fw1.georgia.i "A simple barchart experiment"]
+  ]
 
-     [:svg {:style 
+     [:svg {:style
             {:border "1px solid"
              :background "white"
              :width "50%"
@@ -34,7 +41,7 @@
       )
     ]
 
-     [:button 
+     [:button
       {:on-click #(controller/add-year 2005 113133)
        }
       ]
