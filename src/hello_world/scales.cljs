@@ -1,27 +1,23 @@
-(ns hello-world.scales
+(ns ^:figwheel-hooks hello-world.scales
   (:require
    [cljsjs.d3]
    [hello-world.model :as m :refer [model]]
-  )
-)
+  ))
 
-(def maxValue
-  (->> @model
+(defn maxValue [values]
+  (->> values
       :bars
       (map :value)
       (apply max)
-      int
+      (int)
   ))
-
-(println maxValue)
 
 (defn xScale [x]
   (let [getXCoord
     (-> js/d3
         (.scaleLinear)
-        (.domain #js [0 maxValue])
+        (.domain #js [0 (maxValue @model)])
         (.range #js [0 500])
       )]
-    (getXCoord x)
-  )
+    (getXCoord x))
 )
