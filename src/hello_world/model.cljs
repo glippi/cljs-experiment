@@ -1,4 +1,4 @@
-(ns hello-world.model
+(ns  ^:figwheel-hooks hello-world.model
   (:require [reagent.core :as r])
 )
 
