@@ -1,4 +1,4 @@
-(ns hello-world.controller
+(ns ^:figwheel-hooks hello-world.controller
   (:require
     [hello-world.model :refer [model]]
     [hello-world.http :refer [<GET]])
@@ -15,6 +15,7 @@
   (go
     (let [remote-data (<! (<GET dataVizEndpoint))
           transformed-data (->> remote-data
+                                (take 100)
                                 (map (fn [[year value]]
                                        {:year year :value value})))]
         (-> @model

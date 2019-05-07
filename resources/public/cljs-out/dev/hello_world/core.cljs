@@ -5,9 +5,7 @@
    [hello-world.view :as view :refer [screen-component]] 
    [goog.dom :as gdom]
    [reagent.core :as reagent :refer [atom]]
-   [hello-world.http :refer [printResponse]]
-   )
-  )
+   ))
 
 (defonce init
   (do

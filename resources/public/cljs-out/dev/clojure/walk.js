@@ -51,10 +51,10 @@ return clojure.walk.walk.call(null,cljs.core.partial.call(null,clojure.walk.prew
  * Recursively transforms all map keys from strings to keywords.
  */
 clojure.walk.keywordize_keys = (function clojure$walk$keywordize_keys(m){
-var f = (function (p__18999){
-var vec__19000 = p__18999;
-var k = cljs.core.nth.call(null,vec__19000,(0),null);
-var v = cljs.core.nth.call(null,vec__19000,(1),null);
+var f = (function (p__8754){
+var vec__8755 = p__8754;
+var k = cljs.core.nth.call(null,vec__8755,(0),null);
+var v = cljs.core.nth.call(null,vec__8755,(1),null);
 if(typeof k === 'string'){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.call(null,k),v], null);
 } else {
@@ -75,10 +75,10 @@ return x;
  * Recursively transforms all map keys from keywords to strings.
  */
 clojure.walk.stringify_keys = (function clojure$walk$stringify_keys(m){
-var f = (function (p__19011){
-var vec__19012 = p__19011;
-var k = cljs.core.nth.call(null,vec__19012,(0),null);
-var v = cljs.core.nth.call(null,vec__19012,(1),null);
+var f = (function (p__8758){
+var vec__8759 = p__8758;
+var k = cljs.core.nth.call(null,vec__8759,(0),null);
+var v = cljs.core.nth.call(null,vec__8759,(1),null);
 if((k instanceof cljs.core.Keyword)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.name.call(null,k),v], null);
 } else {

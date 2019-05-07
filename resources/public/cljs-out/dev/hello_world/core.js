@@ -6,7 +6,6 @@ goog.require('hello_world.controller');
 goog.require('hello_world.view');
 goog.require('goog.dom');
 goog.require('reagent.core');
-goog.require('hello_world.http');
 if((typeof hello_world !== 'undefined') && (typeof hello_world.core !== 'undefined') && (typeof hello_world.core.init !== 'undefined')){
 } else {
 hello_world.core.init = (function (){

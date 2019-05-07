@@ -4,5 +4,5 @@
      [hello-world.scales :refer [xScale]]))
 
 (deftest xScale-100-should-return-50
-  (is (= (xScale 100) 5))
+  (is (= (xScale 100) 50))
 )

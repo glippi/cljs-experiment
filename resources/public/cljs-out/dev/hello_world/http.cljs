@@ -6,6 +6,7 @@
    (:require-macros [cljs.core.async.macros :refer [go]])
   )
 
+(def dataVizEndpoint "https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json")
 
 (defn channel-reponse [ch]
   (fn get-data-from-response  [resp]
@@ -68,8 +69,5 @@
 
 
 (defn printResponse []
-  (
-  go
-  (println 
-    (<! ( <GET dataVizEndpoint))
-)))
+  (go
+  (println (<! ( <GET dataVizEndpoint)))))
