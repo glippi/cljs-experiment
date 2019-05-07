@@ -6,7 +6,6 @@
    (:require-macros [cljs.core.async.macros :refer [go]])
   )
 
-
 (defn channel-reponse [ch]
   (fn get-data-from-response  [resp]
     (let [[ok response] resp
@@ -65,11 +64,3 @@
                  (put! ch (from-response resp)))
       :response-format (json-response-format {:keywords? true})})
     ch)))
-
-
-(defn printResponse []
-  (
-  go
-  (println 
-    (<! ( <GET dataVizEndpoint))
-)))
