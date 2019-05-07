@@ -1,11 +1,8 @@
 (ns hello-world.core-test
     (:require
      [cljs.test :refer-macros [deftest is testing]]
-     [hello-world.scales :refer [xScale, maxValue]]))
+     [hello-world.scales :refer [xScale]]))
 
-(def fakeValues
-  {:bars {:value 1}, {:value 2}, {:value 3}})
-
-(deftest maxValue-of-fakeValues
-  (is (= (maxValue fakeValues) 3))
+(deftest xScale-100-should-return-50
+  (is (= (xScale 100) 50))
 )

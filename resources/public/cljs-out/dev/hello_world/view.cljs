@@ -32,17 +32,9 @@
              :width "500px"
              :height (* barHeight (count (:bars state)))}}
 
-    (for [bar (:bars state)]
+     (for [bar (:bars state)]
         ^{:key (:year bar)}
-        [mapBars bar]
-      )
-    ]
-   ]
+        [mapBars bar])]]
 
-     [:button
-      {:on-click #(controller/add-year 2005 113133)
-       }
-      ]
-   ]
-)
-
+     [:button {:on-click #(controller/add-year 2005 113133)}]
+   ])
